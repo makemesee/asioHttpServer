@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project(final)
+set(SOURCES main.cpp connection.hpp connection.cpp header.hpp mime.hpp request_handler.hpp request_handler.cpp request_parser.hpp request_parser.cpp server.hpp server.cpp server_response.hpp server_response.cpp)
+add_executable(final ${SOURCES})
+target_link_libraries(final pthread boost_system boost_thread)
