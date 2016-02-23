@@ -89,6 +89,10 @@ bool RequestHandler::DecodeURL(const std::string &in, std::string &out)
         {
             out += ' ';
         }
+        else if (in[i] == '?')
+        {
+            break;
+        }
         else
         {
             out += in[i];

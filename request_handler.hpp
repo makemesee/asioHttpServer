@@ -23,7 +23,7 @@ struct ClientRequest
 class RequestHandler : private boost::noncopyable
 {
 public:
-    explicit RequestHandler(const std::string& docDir);
+    explicit RequestHandler(const std::string & docDir);
 
   /// Handle a request and produce a reply.
     void HandleIncomingRequest(const ClientRequest &, ServerResponse &);
